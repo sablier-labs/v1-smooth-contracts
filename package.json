@@ -1,0 +1,44 @@
+{
+  "name": "@sablier/smooth-contracts",
+  "description": "Bare-bones implementation of the Sablier protocol",
+  "version": "1.0.0",
+  "author": {
+    "name": "Sablier",
+    "email": "hello@sablier.finance",
+    "url": "https://sablier.finance"
+  },
+  "bugs": {
+    "url": "https://github.com/sablierhq/sablier-smooth-contracts/issues"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts-ethereum-package": "2.2.3",
+    "@openzeppelin/upgrades": "2.5.0"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "7.5.2",
+    "@commitlint/config-conventional": "7.5.0",
+    "@commitlint/config-lerna-scopes": "7.5.1",
+    "@truffle/hdwallet-provider": "^1.0.32",
+    "commitizen": "^3.1.2",
+    "cz-conventional-changelog": "^2.1.0",
+    "dotenv": "^8.2.0",
+    "prettier": "^1.19.1",
+    "prettier-plugin-solidity": "^1.0.0-alpha.42",
+    "shx": "^0.3.2",
+    "solc": "0.5.11",
+    "truffle": "5.0.37"
+  },
+  "files": [
+    "/contracts"
+  ],
+  "homepage": "https://github.com/sablierhq/sablier-smooth-contracts#readme",
+  "license": "LGPL-3.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sablierhq/sablier-smooth-contracts.git"
+  },
+  "scripts": {
+    "clean": "shx rm -rf ./build",
+    "lint": "solhint --config ./.solhint.json --max-warnings 0 'contracts/**/*.sol'"
+  }
+}
